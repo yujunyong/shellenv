@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #配置vim
-if [-f ~/.vimconfig/install.sh ]; then
+if [ -f ~/.vimconfig/install.sh ]; then
   ~/.vimconfig/install.sh
 fi
 
