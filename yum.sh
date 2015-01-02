@@ -3,16 +3,12 @@
 #安装vim
 echo "\n\033[0;34m安装vim...\033[0m"
 sudo yum -y install vim
-echo "\033[0;34安装vim的配置...\033[0m"
-git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig
 
 #安装oh-my-zsh
 echo "\n\033[0;34m安装zsh...\033[0m"
 sudo yum -y install zsh
 echo "  \033[0;34m安装curl，用来安装oh-my-zsh\033[0m"
 sudo yum -y install curl
-echo "  \033[0;34m安装zsh的配置oh-my-zsh...\033[0m"
-curl -L http://install.ohmyz.sh | sh
 
 #设置当前用户的登录shell为zsh
 echo "\033[0;33m设置当前用户的登录shell为zsh\033[0m"

@@ -3,8 +3,6 @@
 #安装vim
 echo "\n\033[0;34m安装vim...\033[0m"
 brew install vim
-echo "\033[0;34安装vim的配置...\033[0m"
-git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig
 
 #安装oh-my-zsh
 echo "\n\033[0;34m安装zsh...\033[0m"
