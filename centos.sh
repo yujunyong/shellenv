@@ -14,9 +14,12 @@ sudo yum -y install curl
 echo "\n\033[0;34m安装zsh的配置oh-my-zsh...\033[0m"
 curl -L http://install.ohmyz.sh | sh
 
+#设置当前用户的登录shell为zsh
+sudo chsh -s `which zsh` $USER
+
 #安装tmux
-echo "\n\033[0;34m安装tmux...\033[0m"
-sudo yum -y install tmux
+# echo "\n\033[0;34m安装tmux...\033[0m"
+# sudo yum -y install tmux
 
 #配置已经安装好的软件
 echo "\n\033[0;34m软件已经安装完成，开始配置已经安装好的软件...\033[0m"
