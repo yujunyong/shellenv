@@ -10,7 +10,7 @@ if hash yum >/dev/null 2>&1; then
   exec $CURDIR/yum.sh
 elif hash apt-get >/dev/null 2>&1; then
   sudo apt-get -y install zsh
-  exec $CURDIR/apt-get.zsh
+  exec $CURDIR/apt-get.sh
 fi
 
 if [ `uname` == 'Darwin*' ]; then
