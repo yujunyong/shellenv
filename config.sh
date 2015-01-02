@@ -35,6 +35,10 @@ if hash tmux >/dev/null 2>&1; then
 
   echo "  \033[0;34m使用tmux配置文件模板生成~/.tmux.conf文件\033[0m"
   cp tmux.conf.template ~/.tmux.conf
+  sed -i -e "/default-shell/c \\
+  set -g default-shell $(which zsh)
+  " ~/.tmux.conf
+
 fi
 
 #配置完成
