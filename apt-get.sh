@@ -6,13 +6,13 @@ sudo apt-get update
 
 #安装vim
 echo "\n\033[0;34m安装vim...\033[0m"
-sudo apt-get install vim
+sudo apt-get install -y vim
 
 #安装oh-my-zsh
 echo "\n\033[0;34m安装zsh...\033[0m"
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 echo "  \033[0;34m安装curl，用来安装oh-my-zsh\033[0m"
-sudo apt-get install curl
+sudo apt-get install -y curl
 
 #设置当前用户的登录shell为zsh
 echo "\033[0;33m设置当前用户的登录shell为zsh\033[0m"
@@ -20,7 +20,7 @@ sudo chsh -s `which zsh` $USER
 
 #安装tmux
 echo "\n\033[0;34m安装tmux...\033[0m"
-sudo apt-get install tmux
+sudo apt-get install -y tmux
 
 #配置已经安装好的软件
 echo "\n\033[0;34m软件已经安装完成，开始配置已经安装好的软件...\033[0m"
